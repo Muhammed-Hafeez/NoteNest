@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteNest - Notes</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header id="Navbar"></header>
+    <div
+      class="sticky top-0 z-10 my-4 w-[90%] mx-auto backdrop-blur-sm rounded-md py-2 px-4 border-2 flex justify-between"
+    >
+      <a class="back cursor-pointer" href="/home"></a>
+      <div class="flex items-center justify-center gap-4">
+        <span class="delete cursor-pointer" id="deleteNote"></span>
+        <span class="save-fill cursor-pointer" id="saveNote"></span>
+      </div>
+    </div>
+    <main class="w-[90%] mx-auto">
+      <h1
+        class="text-6xl md:text-7xl my-4 outline-none font-bold border-b-2"
+        contenteditable="true"
+        id="note-heading"
+        spellcheck="false"
+      ></h1>
+      <p
+        contenteditable="true"
+        class="outline-none text-lg md:text-xl border-b-2 py-4 min-h-28"
+        id="note-body"
+        spellcheck="false"
+      ></p>
+    </main>
+  </body>
+  <script type="module" src="/src/pages/notes.ts"></script>
+</html>
