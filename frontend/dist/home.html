@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteNest - Home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./android-chrome-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <script type="module" crossorigin src="./assets/home-Ccb3RCg8.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/icons-bHJw5qYK.js">
+    <link rel="modulepreload" crossorigin href="./assets/notes-CT7F2GOp.js">
+    <link rel="modulepreload" crossorigin href="./assets/Footer-CaaJWQBV.js">
+    <link rel="stylesheet" crossorigin href="./assets/icons-CGi8zWHk.css">
+  </head>
+  <body>
+    <header id="Navbar"></header>
+    <main class="w-[90%] mx-auto min-h-[100vh]">
+      <div class="flex items-center justify-center mt-12">
+        <form
+          class="hover:border-black border-white border-2 rounded-xl flex items-center bg-gray-200 w-full mr-2"
+        >
+          <div class="search rounded-l-xl m-2"></div>
+          <input
+            type="text"
+            class="bg-gray-200 rounded-r-xl p-2 text-lg outline-none text-black w-full"
+            placeholder="search for notes"
+            id="filterNotes"
+          />
+        </form>
+        <div class="profile cursor-pointer"></div>
+      </div>
+      <section
+        id="date"
+        class="flex mx-auto my-4 gap-2 items-center whitespace-nowrap overflow-x-auto overflow-y-hidden"
+      ></section>
+      <section
+        id="tags"
+        class="flex overflow-x-auto w-full mx-auto gap-2"
+      ></section>
+      <section id="notes" class="grid grid-cols-2 my-4"></section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>

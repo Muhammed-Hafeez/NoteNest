@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./android-chrome-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <title>NoteNest - signup</title>
+    <script type="module" crossorigin src="./assets/icons-bHJw5qYK.js"></script>
+    <script type="module" crossorigin src="./assets/Footer-CaaJWQBV.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/icons-CGi8zWHk.css">
+  </head>
+
+  <body class="min-h-screen m-0 w-full">
+    <header id="Navbar" class="w-full"></header>
+
+    <section class="bg-white w-full">
+      <div class="lg:grid h-full lg:grid-cols-12 min-h-screen">
+        <section
+          class="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6 w-full"
+        >
+          <img
+            alt=""
+            src="./main_background.jpg"
+            class="absolute inset-0 h-full w-full object-cover opacity-80"
+          />
+
+          <div class="hidden lg:relative lg:block lg:p-12">
+            <a class="block text-white w-fit" href="/">
+              <span class="sr-only">Home</span>
+              <img
+                src="./android-chrome-192x192.png"
+                alt="book icon"
+                width="100px"
+              />
+            </a>
+
+            <h2
+              class="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl"
+            >
+              Welcome to NoteNest
+            </h2>
+
+            <p class="mt-4 leading-relaxed text-white/90">
+              Capture Ideas, Stay Organized!
+            </p>
+          </div>
+        </section>
+
+        <main
+          class="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6 w-full"
+        >
+          <div class="max-w-xl lg:max-w-3xl">
+            <div class="relative -mt-16 block lg:hidden">
+              <a
+                class="inline-flex size-16 items-center justify-center rounded-full bg-white text-blue-600 sm:size-20"
+                href="/"
+              >
+                <span class="sr-only">Home</span>
+                <img src="./android-chrome-192x192.png" alt="book icon" />
+              </a>
+
+              <h1
+                class="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl"
+              >
+                Welcome to NoteNest
+              </h1>
+
+              <p class="mt-4 leading-relaxed text-gray-500">
+                Capture Ideas, Stay Organized!
+              </p>
+            </div>
+
+            <form action="/api/v1/signup" class="mt-8 grid grid-cols-6 gap-6">
+              <div class="col-span-6 sm:col-span-3">
+                <label
+                  for="FirstName"
+                  class="block text-sm font-medium text-gray-700"
+                >
+                  First Name
+                </label>
+                <input
+                  type="text"
+                  id="FirstName"
+                  name="first_name"
+                  class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm p-2"
+                />
+              </div>
+              <div class="col-span-6 sm:col-span-3">
+                <label
+                  for="LastName"
+                  class="block text-sm font-medium text-gray-700"
+                >
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  id="LastName"
+                  name="last_name"
+                  class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm p-2"
+                />
+              </div>
+
+              <div class="col-span-6">
+                <label
+                  for="Email"
+                  class="block text-sm font-medium text-gray-700"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="Email"
+                  name="email"
+                  class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm p-2"
+                />
+              </div>
+
+              <div class="col-span-6 sm:col-span-3">
+                <label
+                  for="Password"
+                  class="block text-sm font-medium text-gray-700"
+                >
+                  Password
+                </label>
+                <input
+                  type="password"
+                  id="Password"
+                  name="password"
+                  class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm p-2"
+                />
+              </div>
+
+              <div class="col-span-6 sm:col-span-3">
+                <label
+                  for="PasswordConfirmation"
+                  class="block text-sm font-medium text-gray-700"
+                >
+                  Password Confirmation
+                </label>
+                <input
+                  type="password"
+                  id="PasswordConfirmation"
+                  name="password_confirmation"
+                  class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm p-2"
+                />
+              </div>
+
+              <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
+                <button
+                  class="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
+                >
+                  Create an account
+                </button>
+
+                <p class="mt-4 text-sm text-gray-500 sm:mt-0">
+                  Already have an account?
+                  <a href="/login" class="text-gray-700 underline">Log in</a>.
+                </p>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <footer id="footer" class="w-full"></footer>
+
+  </body>
+</html>
